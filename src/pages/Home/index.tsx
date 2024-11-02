@@ -5,6 +5,7 @@ import { Card } from '../../components/Card'
 
 import { coffees } from '../../../data.json'
 import { CoffeeList, Heading, Hero, HeroContent, Info } from './styles'
+import { Footer } from '../../components/Footer'
 
 export function Home() {
   const theme = useTheme()
@@ -81,6 +82,7 @@ export function Home() {
           ))}
         </div>
       </CoffeeList>
+      <Footer />
     </div>
   )
 }
