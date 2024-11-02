@@ -16,7 +16,7 @@ export function Header() {
       <Aside>
         <div>
           <MapPin size={22} weight="fill" />
-          <span>Porto Alegre, RS</span>
+          <span>Praia, ST</span>
         </div>
 
         <Link to={`cart`} aria-disabled={cart.length === 0}>
