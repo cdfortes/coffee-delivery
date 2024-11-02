@@ -1,27 +1,73 @@
-# React + TypeScript + Vite
+<h1 align="center">
+  Coffee Delivery
+</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img src="./cover.png"/>
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<br/>
 
-## Expanding the ESLint configuration
+## ☕ Coffee Shop E-commerce
+Welcome to the Coffee Shop E-commerce project! This application is a fully functional e-commerce site for coffee sales, developed to strengthen and demonstrate concepts such as state management with Context API, routing with React Router, form validation with react-hook-form and zod, and styling with styled-components.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## ✨ Features
+- Product Browsing: View and browse through a selection of coffee products.
+- Shopping Cart: Add, remove, and adjust quantities of items in the cart.
+- Checkout Form: A fully validated checkout form for secure and smooth transactions.
+- Order Confirmation: See order details upon successful checkout.
 
-- Configure the top-level `parserOptions` property like this:
+## 🚀 Technologies
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+This project was developed with the following technologies:
+
+- [React](https://reactjs.org)
+- [TypeScript](https://www.typescriptlang.org/)
+- [StyledComponents](https://www.styled-components.com/)
+- [Zod](https://zod.dev/)
+- [ReactHookForm](https://react-hook-form.com/)
+- [ReactRouterDom](https://reactrouter.com/)
+- [Immerjs](https://github.com/immerjs/immer#readme)
+
+## 🚀 Getting Started
+
+Prerequisites
+Make sure you have the following installed:
+
+- Node.js
+- npm, pnpm or yarn
+
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Pmpm](https://pnpm.io/). From your command line:
+
+```bash
+# Clone the repository
+$ git clone https://github.com/cdfortes/coffee-delivery.git
+
+# Go into the directory
+$ cd coffee-delivery
+
+# Install dependencies
+$ pnpm i
+
+# Run the development server
+$ pnpm run dev
+
+# Navigate to http://localhost:5173/
+# The app will automatically reload if you change any of the source files.
+
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## 💻 Usage
+- Browse through coffee products.
+- Add items to your cart.
+- Adjust quantities or remove items.
+- Complete the checkout form to place an order.
+
+## 🎯 Learning Objectives
+- Improve understanding and implementation of Context API for state management.
+- Practice React Router for page navigation in a single-page application.
+- Deepen form handling skills with react-hook-form and zod for validation.
+- Develop styling capabilities with styled-components for modular design.
+
+---
+
+Made with ♥ by Carlos Fortes👋🏻

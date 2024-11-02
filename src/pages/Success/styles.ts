@@ -5,7 +5,7 @@ import { mixins } from '../../styles/mixins'
 export const Container = styled.main`
   display: flex;
   max-width: 1160px;
-  margin: 0 auto;
+  margin: 0 auto 230px;
   padding: 80px 20px;
   align-items: flex-end;
   justify-content: space-between;

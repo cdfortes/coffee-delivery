@@ -1,14 +1,20 @@
 import { Coffee, Package, ShoppingCart, Timer } from '@phosphor-icons/react'
 import { useTheme } from 'styled-components'
+import { useState } from 'react'
 
 import { Card } from '../../components/Card'
 
 import { coffees } from '../../../data.json'
-import { CoffeeList, Heading, Hero, HeroContent, Info } from './styles'
-import { Footer } from '../../components/Footer'
+import { CoffeeList, Heading, Hero, HeroContent, Info, SearchBar } from './styles'
 
 export function Home() {
   const theme = useTheme()
+  const [searchTerm, setSearchTerm] = useState('')
+
+
+  const filteredCoffees = coffees.filter((coffee) =>
+    coffee.title.toLowerCase().includes(searchTerm.toLowerCase())
+  )
 
   return (
     <div>
@@ -73,16 +79,34 @@ export function Home() {
         <img src="/images/hero-bg.svg" id="hero-bg" alt="" />
       </Hero>
 
+
+
+
       <CoffeeList>
-        <h2>Nossos cafés</h2>
+        <div className='wrapper'>
+          <h2>Nossos cafés</h2>
+          <SearchBar>
+            <input
+              type="text"
+              placeholder="Pesquisar cafés..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+            />
+          </SearchBar>
+
+        </div>
+
 
         <div>
-          {coffees.map((coffee) => (
-            <Card key={coffee.id} coffee={coffee} />
-          ))}
+          {filteredCoffees.length > 0 ? (
+            filteredCoffees.map((coffee) => (
+              <Card key={coffee.id} coffee={coffee} />
+            ))
+          ) : (
+            <p>Nenhum café encontrado.</p>
+          )}
         </div>
       </CoffeeList>
-      <Footer />
     </div>
   )
 }

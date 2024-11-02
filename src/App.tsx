@@ -5,6 +5,7 @@ import { Header } from './components/Header'
 import { defaultTheme } from './styles/themes/default'
 import { GlobalStyle } from './styles/global'
 import { CartContextProvider } from './contexts/CartProvider'
+import { Footer } from './components/Footer'
 
 export function App() {
   return (
@@ -14,6 +15,7 @@ export function App() {
       <CartContextProvider>
         <Header />
         <Outlet />
+        <Footer />
       </CartContextProvider>
     </ThemeProvider>
   )

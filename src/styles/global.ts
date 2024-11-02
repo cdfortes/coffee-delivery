@@ -22,4 +22,6 @@ export const GlobalStyle = createGlobalStyle`
     border: none;
     cursor: pointer;
   }
+
+  
 `

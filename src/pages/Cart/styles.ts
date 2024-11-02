@@ -6,8 +6,9 @@ export const Container = styled.main`
   display: flex;
   max-width: 1160px;
   padding: 40px 20px;
-  margin: 0 auto;
+  margin: 0 auto 100px;
   gap: 32px;
+
 `
 
 export const InfoContainer = styled.div`

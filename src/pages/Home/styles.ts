@@ -85,4 +85,48 @@ export const CoffeeList = styled.section`
     grid-row-gap: 40px;
     grid-column-gap: 32px;
   }
+
+  .wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  }
+`
+
+
+export const SearchBar = styled.div`
+  margin: 20px 0;
+  display: flex;
+  width: 100%
+  flex: 1;
+
+  input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 6px;
+  border: 1px solid ${({ theme }) => theme.colors['base-button']};
+  border-radius: 6px;
+
+  background-color: ${({ theme }) => theme.colors['base-input']};
+
+  transition: all 0.2s;
+
+  &[data-state='focused'] {
+    border-color: ${({ theme }) => theme.colors['yellow-dark']};
+  }
+
+  &[data-state='blurred'] {
+    border-color: ${({ theme }) => theme.colors['base-button']};
+  }
+    color: ${({ theme }) => theme.colors['base-text']};
+    
+
+    &::placeholder {
+      color: ${({ theme }) => theme.colors['base-label']};
+    }
+  }
 `
