@@ -14,7 +14,7 @@ export function Footer() {
           <img src="/logo-white.svg" alt="Coffee Delivery" />
         </Link>
 
-        <p> {currentYear} - CoffeeDeliver. Todos os Direitos Reservados</p>
+        <p> {currentYear} © CoffeeDeliver. Todos os Direitos Reservados</p>
 
 
       </Container>
